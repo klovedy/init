@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <meta name="description">
+    <title>K-love-DY</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Chinese Quote", -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif,
+                "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            font-size: 1em;
+            height: 100%;
+            position: relative;
+        }
+
+        .base {
+
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            font-weight: 300;
+            color: #2C3E50;
+            font-size: 1.25rem;
+            line-height: 1.5;
+        }
+
+        .typing {
+            padding: 10% 6% 0;
+        }
+
+        .typing p {
+            margin-bottom: 20px;
+        }
+
+        .line {
+            display: inline-block;
+            width: 10px;
+            animation: blink-caret .75s step-end infinite;
+        }
+
+        /* The typewriter cursor effect */
+        @keyframes blink-caret {
+
+            from,
+            to {
+                opacity: transparent;
+            }
+
+            50% {
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <div id='divTyping' class="base typing"></div>
+    <script>
+        var str =
+            '<p>✨2018-11-17 平遥之旅「一」，楼下  走在望京站 路上 气渐消 减50%，九龙山 7号线 气-80% 北京西 永和小包子 豆浆，去往平遥古城高铁上 吐槽大会 果冻1 没有勺子 不怎么好吃的山楂片，平遥古城站门口 自拍 丽枫酒店 环境很不错 茶水 接送  玫瑰红酒床 蓝牙吊顶音响 自动窗帘 浴室music 细节做的很好 3.5星，古城东门进 晋升炉食 牛肉 酱面 辣西红柿 莜面条 虽辣但很好吃，逛逛 大爷梨汤 加银耳 梨汤很棒，邓亚萍小店 超级棒的牛肉干  醋馆门前拍照 半斤五年精酿 南门 塔楼下 拍照 天元奎酒楼 山西面食 套餐 热情的007阿姨 送油茶 很甜很好喝 灌了一杯他们家热水 哈哈哈，继续逛街 再去买牛肉干， 已傍晚 小风一吹 贼冷 偶遇酒吧 小瓜子 红蓝调酒 老板献唱 迷妹脸，时九点 回丽枫 已不接送 徒步走回 变东222(好爱你 哈哈哈) 一路歌唱，更衣 沐浴 ...不可描述... 紧张 ...一点半 睡 ....</p><p>✨2018-1-18 平遥之旅「二」，早上...再睡...11点多 洗...  ，复兴公饭店 3人套餐 热情的眼镜老板 量很大 送油茶，买蛋仔 犹豫了一下 坐地起价的昧良心女老板 媳妇儿一眼识破，再次找 梨汤大爷 加银耳，路过醋店  去南门 遇到黑车司机家属 30块到高铁站  一辆没有7手夏利新的电动四轮车  极度危险的驾驶 坐车里紧张 长记性下次坚决不坐不明黑出租，到车站 高铁上 吃掉所有牛肉干 你安静的睡了俩小时 看你的样子好美 看了半段白鹿原电影，7号地铁 回家 拿行李 吻别..</p>  ';
+        var i = 0;
+
+        function typing() {
+            var divTyping = document.getElementById('divTyping');
+            if (i <= str.length) {
+                divTyping.innerHTML = str.slice(0, i++) + '<span class="line">_</span>';
+                setTimeout('typing()', 200); //递归调用
+            } else {
+                //  divTyping.innerHTML = str;//结束打字,移除 _ 光标
+            }
+        }
+        typing();
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>
