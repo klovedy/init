@@ -21,17 +21,17 @@ body {
 /* Color schemes */
 .demo-1 {
 	--color-text: #fff;
-	--color-bg: #8c4abd;
+	--color-bg: #7103c1;
 	--color-link: #fff;
 	--color-link-hover: #fff473;
 	--color-nav: #fff;
-	--color-bg-slide-1: #0177ca;
-	--color-bg-slide-2: #56979e;
+	--color-bg-slide-1: #7f4db5;
+	--color-bg-slide-2: #365b71;
 	--color-bg-slide-3: #c1568c;
-	--color-bg-slide-4: #565582;
-	--color-bg-slide-5: #5900ce;
+	--color-bg-slide-4: #4d4c8e;
+	--color-bg-slide-5: #5a2f94;
 	--color-bg-slide-6: #1b1a1a;
-	--color-bg-slide-7: #bf2525;
+	--color-bg-slide-7: #bf1b1b;
 	--color-bg-slide-8: #cccccc;
 	--color-bg-slide-9: #000000;
 }
